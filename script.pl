@@ -1,3 +1,7 @@
+#!/usr/bin/swipl
+
+[facts],[rules].
+
 is_child("Daniel Ignacio Useche", "Javier Useche").
 is_child("Ana Maria Useche", "Javier Useche").
 is_child("Yelitza Paredes", "Irma Silva").
@@ -49,3 +53,4 @@ is_brotherinlaw("Erick Becerra", "Jonathan Javier Useche").
 is_sisterinlaw("Milagros Galvis", "Ana Maria Useche").
 is_sisterinlaw("Albadaniela Useche", "Yelitza Paredes").
 is_sisterinlaw("Analicia von shritz", "Julio Cesar Chuecos").
+halt.
