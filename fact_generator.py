@@ -56,7 +56,7 @@ class FamilyNode:
                'childs: ' + '\n' + '\n'.join(self.childrens)
 
 def treeTraveler(familyObjList, familyleaf):
-
+    #Falta mejor implementación de la recursión
     familyObjList.append(
         FamilyNode(
             familyleaf['nombre'], 
@@ -71,41 +71,36 @@ def treeTraveler(familyObjList, familyleaf):
 
 if __name__=='__main__':
 
+    #Leer el arbol Genealogico del archivo JSON
     familyDict = {}
     with open("arbol_genealogico.json") as file:
         familyDict= json.load(file)
 
+    #Lista de cada nodo del arbol para obtener sus hechos adecuados
     familyObjList = []
-    rulesSet = set()
-
+    #Itera entre ramas familiares sin relacion
     for x in familyDict:
         treeTraveler(familyObjList,x)
-                        
-    #print('\n'.join([x.printFacts() for x in familyObjList]))
     
-    rulesList = []
+    #Se utiliza un set para evitar los hechos repetidos
+    facts_Set = set()
     for x in familyObjList:
-        rulesSet.update(x.facts)
+        facts_Set.update(x.facts)
 
-    rules ={
-        'is_male':[],
-        'is_female':[],
-        'is_father':[],
-        'is_mother':[],
-        'are_married':[]
+    #lista de hechos posibles en un arbol genealogico
+    facts_list =[
+        'is_male',
+        'is_female',
+        'is_father',
+        'is_mother',
+        'are_married'
+        ]
 
-        }
-
-    for key in rules.keys():
-        for rule in rulesSet: 
-            if key in rule:
-                rules[key].append(rule)
-                print(rule)
-
+    #Escribe en el archivo facts.pl los hechos organizadas por tipo
     with open('facts.pl','w') as facts_file:
-        for value in rules.values():
-            for fact in value:
-                facts_file.write(fact)
-                facts_file.write('\n')
-        
-        
+        for key in facts_list:
+            for fact in facts_Set: 
+                if key in fact:
+                    print(fact)
+                    facts_file.write(fact)
+                    facts_file.write('\n')
