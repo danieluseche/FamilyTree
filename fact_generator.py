@@ -26,24 +26,22 @@ class FamilyNode:
         if self.genre == 'F':
            self.facts.append(f'is_female("{self.name}").')
 
-           if self.hasChildrens:
-               self.facts += [f'is_mother("{self.name}","{x}").' for x in self.childrens]
- 
         if self.genre == 'M':
-           self.facts.append(f'is_male("{self.name}").')
-           
-           if self.hasChildrens:
-               self.facts += [f'is_father("{self.name}","{x}").' for x in self.childrens]
+           self.facts.append(f'is_male("{self.name}").')   
+        
+        if self.hasChildrens:
+            self.facts += [f'is_parent("{self.name}","{x}").' for x in self.childrens]
 
         if self.hasPartner:
             self.facts.append(f'are_married("{self.name}","{self.partner}").')
             
             if self.genre == 'F':
                 self.facts.append(f'is_male("{self.partner}").')
-                self.facts += [f'is_father("{self.partner}","{x}").' for x in self.childrens]
+                
             if self.genre == 'M':
                 self.facts.append(f'is_female("{self.partner}").')
-                self.facts += [f'is_mother("{self.partner}","{x}").' for x in self.childrens]
+
+            self.facts += [f'is_parent("{self.partner}","{x}").' for x in self.childrens]
             self.facts.append(f'are_married("{self.partner}","{self.name}").')
 
     def printFacts(self):
@@ -91,8 +89,7 @@ if __name__=='__main__':
     facts_list =[
         'is_male',
         'is_female',
-        'is_father',
-        'is_mother',
+        'is_parent',
         'are_married'
         ]
 
