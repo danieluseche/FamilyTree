@@ -1,0 +1,1 @@
+Escriba un programa en prolog para describir su árbol genealógico. Deberá definir los predicados que considere necesario Y definir las relaciones siguientes: hijo,  padre, madre, hermano, Nieto, abuelo, tío, primo, bisabuelo y cuñado.

@@ -1,0 +1,202 @@
+{
+	"nombre": "Irma Silva",
+	"genero": "F",
+	"conyuge":"Ramon Ignacio Paredes",
+	"hijos":
+	[
+		{
+			"nombre": "Simon Paredes",
+			"genero": "M",
+			"conyuge":"",
+			"hijos":
+			[
+				{
+					"nombre": "Marya Alejandra Paredes",
+					"genero": "F",
+					"conyuge":"Jose Enrique",
+					"hijos":
+					[
+						{
+							"nombre": "Gabriel",
+							"genero": "M",
+							"conyuge":"",
+							"hijos":[]
+						},
+						{
+							"nombre": "Maria Victoria",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						},
+						{
+							"nombre": "Maria Virginia",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						}
+					]
+				},
+			
+				{
+					"nombre": "Simon Andres Paredes",
+					"genero": "M",
+					"conyuge":"",
+					"hijos":[]
+				},
+			
+				{
+					"nombre": "Maria Fernanda Paredes",
+					"genero": "F",
+					"conyuge":"",
+					"hijos":[]
+				}
+			]
+		},
+		{
+			"nombre": "Marisabel Paredes",
+			"genero": "F",
+			"conyuge":"Luis Chuecos",
+			"hijos":
+			[
+				{
+					"nombre": "Jose Ignacio Chuecos",
+					"genero": "M",
+					"conyuge":"",
+					"hijos":[]
+				},
+				{
+					"nombre": "Carlos Luis Chuecos",
+					"genero": "M",
+					"conyuge":"Analicia von shritz",
+					"hijos":
+					[
+						{
+							"nombre": "Amanda Caori",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						},
+						{
+							"nombre": "Gemela Roja",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						},
+						{
+							"nombre": "Gemela Rubia",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						}
+					]
+				},
+				{
+					"nombre": "Julio Cesar Chuecos",
+					"genero": "M",
+					"conyuge":"",
+					"hijos":[]
+				}
+
+			]
+		},
+		{
+			"nombre": "Yuli Paredes",
+			"genero": "F",
+			"conyuge":"Ali Ramirez",
+			"hijos":
+			[
+				{
+					"nombre": "Yulia Ramirez",
+					"genero": "F",
+					"conyuge":"",
+					"hijos":
+					[
+						{
+							"nombre": "Sofia",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						}
+					]
+				},
+				{
+					"nombre": "Rafael Ramirez",
+					"genero": "M",
+					"conyuge":"",
+					"hijos":[]
+				}
+
+			]
+		},
+		{
+			"nombre": "Julio Paredes",
+			"genero": "M",
+			"conyuge":"Sugeil Diaz",
+			"hijos":
+			[
+				{
+					"nombre": "Juliana Paredes",
+					"genero": "F",
+					"conyuge":"",
+					"hijos":
+					[
+						{
+							"nombre": "Aranxa",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						},
+						{
+							"nombre": "Monserrat",
+							"genero": "F",
+							"conyuge":"",
+							"hijos":[]
+						}
+					]
+				},
+				{
+					"nombre": "Maria andrea Paredes",
+					"genero": "F",
+					"conyuge":"",
+					"hijos":[]
+				},
+				{
+					"nombre": "Cesar Manuel Paredes",
+					"genero": "M",
+					"conyuge":"",
+					"hijos":[]
+				}
+
+			]
+		},
+		{
+			"nombre": "Yelitza Paredes",
+			"genero": "F",
+			"conyuge":"Javier Useche",
+			"hijos":
+			[
+				{
+					"nombre": "Ana Maria Useche",
+					"genero": "F",
+					"conyuge":"Eric Becerra",
+					"hijos":
+					[
+						{
+							"nombre": "Natalia Lucia Becerra Useche",
+							"genero": "M",
+							"conyuge":"",
+							"hijos":[]
+						}
+					]
+				},
+				{
+					"nombre": "Daniel Ignacio Useche",
+					"genero": "M",
+					"conyuge":"Milagros Galvis",
+					"hijos":[]
+				}
+			]
+		}
+	]
+}
+
