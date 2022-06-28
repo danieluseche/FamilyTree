@@ -1,6 +1,6 @@
 is_child(X,Y) :- is_parent(Y,X).
-is_brother(X,Y):- \+(X==Y), is_male(X), is_child(X,Z), is_child(Y,Z).
-is_sister(X,Y):- \+(X==Y), is_female(X), is_child(X,Z), is_child(Y,Z).
+is_brother(X,Y):- dif(X,Y), is_male(X), is_child(X,Z), is_child(Y,Z).
+is_sister(X,Y):- dif(X,Y), is_female(X), is_child(X,Z), is_child(Y,Z).
 is_grandchild(X,Z):- is_child(X,Y), is_child(Y,Z).
 is_grandfather(X,Y):- is_male(X), is_grandchild(Y,X).
 is_grandmother(X,Y):- is_female(X), is_grandchild(Y,X).
